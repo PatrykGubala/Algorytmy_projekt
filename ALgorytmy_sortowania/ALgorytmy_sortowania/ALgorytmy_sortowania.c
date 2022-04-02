@@ -6,7 +6,7 @@
 
 void swap(int* a, int * b)
 {
-    register int temp = *a;
+    int temp = *a;
     *a=*b;
     *b = temp;
 }
@@ -14,7 +14,7 @@ void swap(int* a, int * b)
 
 
 
-void insertSort(int tab[], int n)
+void insertionSort(int tab[], int n)
 {
     register int i, k, j;
     for (i = 1; i < n; i++)
@@ -76,12 +76,12 @@ void fullfillArray(int tab[], int n)
 
 int main()
 {
-    int tab[10000];
+    int tab[1000];
     int n = sizeof(tab)/sizeof(tab[0]);
     fullfillArray(tab, n);
     selectionSort(tab, n);
-    tab[4999] = 7;
-    
+    tab[599] = 7;
+    insertionSort(tab, n);
     printArray(tab, n);
     for (int i = 0; i < 100000000; i++);
     int ticks = clock();
