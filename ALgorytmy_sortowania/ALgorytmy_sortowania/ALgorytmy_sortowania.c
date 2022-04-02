@@ -30,7 +30,7 @@ void insertionSort(int tab[], int n)
 }
 
 void exchangeSort(int tab[], int n) {
-    register int i, j, temp;
+    int i, j;
     for (i = 0; i < (n - 1); i++)
     {
         for (j = (i + 1); j < n; j++)
@@ -76,27 +76,31 @@ void fullfillArray(int tab[], int n)
 
 int main()
 {
+
+    //insertionSort(tab, n);
+    //exchangeSort(tab, n);
+    //selectionSort(tab, n);
     int tab[1000];
     int n = sizeof(tab)/sizeof(tab[0]);
     fullfillArray(tab, n);
-    selectionSort(tab, n);
-    tab[599] = 7;
-    insertionSort(tab, n);
-    printArray(tab, n);
-    for (int i = 0; i < 100000000; i++);
-    int ticks = clock();
+    insertionSort(tab, n);//tutaj tworzymy wstepnie posortowana tablice (dowolne sortowanie)
+    //printArray(tab, n);
+    tab[500] = 70;
+    long before = clock();//mierzenie czasu
 
-    //insertSort(tab, n);
-    //exchangeSort(tab, n);
-    //selectionSort(tab, n);
+    exchangeSort(tab, n);
+
+    long after = clock();
+   // printArray(tab, n);
     
-    
+    double elapsed = (double)(after - before) / CLOCKS_PER_SEC;
+   
+    printf("%lf seconds elapsed\n", elapsed);
 
     
 
-    
-    printArray(tab, n);
 
-    printf("TIME: %f\n\n\n\n", (float)ticks/CLOCKS_PER_SEC);
+
+    
     return 0;
 }

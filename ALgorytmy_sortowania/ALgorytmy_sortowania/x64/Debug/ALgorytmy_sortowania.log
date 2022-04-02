@@ -1,5 +1,4 @@
 ﻿  ALgorytmy_sortowania.c
-C:\Users\patry\OneDrive\Dokumenty\GitHub\Algorytmy_projekt\ALgorytmy_sortowania\ALgorytmy_sortowania\ALgorytmy_sortowania.c(33,24): warning C4101: "temp": lokalna zmienna, do której nie istnieje odwołanie
 C:\Users\patry\OneDrive\Dokumenty\GitHub\Algorytmy_projekt\ALgorytmy_sortowania\ALgorytmy_sortowania\ALgorytmy_sortowania.c(71,10): warning C4013: niezdefiniowany "srand"; przy założeniu, że extern zwraca int
 C:\Users\patry\OneDrive\Dokumenty\GitHub\Algorytmy_projekt\ALgorytmy_sortowania\ALgorytmy_sortowania\ALgorytmy_sortowania.c(73,22): warning C4013: niezdefiniowany "rand"; przy założeniu, że extern zwraca int
   ALgorytmy_sortowania.vcxproj -> C:\Users\patry\OneDrive\Dokumenty\GitHub\Algorytmy_projekt\ALgorytmy_sortowania\x64\Debug\ALgorytmy_sortowania.exe
